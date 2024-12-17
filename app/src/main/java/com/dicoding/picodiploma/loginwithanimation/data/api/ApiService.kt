@@ -40,7 +40,7 @@ interface ApiService {
         @Header("Authorization") token: String,
         @Query("page") page: Int = 1,
         @Query("size") size: Int = 20
-    ) :List<ListStoryItem>
+    ) :StoryResponse
 
 //            : StoryResponse
     @GET("stories")
